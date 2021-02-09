@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="author" content="TR0UBLESHOOTER (github)">
+        <meta name="description" content="A Bio Link Tool">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ tab_title }}</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="icon" href="{{ page_icon }}">
+    </head>
+
+    <body>
+        <div class="hero is-fullheight {% block bg %}is-primary{% endblock %}">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p class="subtitle has-text-primary-dark">&copy; {{ CurrentYear }} {{ organisation_name }} </p>
+                <p><img class="icon" style="width:auto; height:auto" src="https://i.ibb.co/Gn0Kx1g/Transparent-bg-footer-light-theme.png"></p>
+            </div>
+        </div>
+    </footer>
+
+</html>

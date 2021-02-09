@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Your Title Here {% endblock %}
+
+{% block content %} 
+<div class="columns is-vcentered">
+    <div class="column">
+        <br />
+        <div class="container has-text-centered">
+            <div class="box">
+                <h1 class="title has-text-primary-dark">Error 405</h1>
+                <hr class="hr" />
+                <br />
+                <p class="text has-text-link-dark">Method not allowed.</p>
+            </div>
+            <p><button class="button is-white is-link is-outlined is-rounded"><a href="/login"> Go to login </a></button></p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+<div class="container has-text-centered">
+    <div class="card-image has-text-centered">
+        <figure class="image is-96x96 is-inline-block">
+            <img class="is-rounded" src="{{ avatar }}"/>
+        </figure>
+    </div>
+
+    <h1 class="title">{{title}}</h1>
+    <hr class="title-hr" />
+
+    {% for item in linkList %}
+        <p><a href="{{ item[1] }}"><button class="button is-medium is-white is-fullwidth is-outlined is-rounded"> {{ item[0] }}</button></a>
+        <br /></p>
+    {% endfor %}
+</div>

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %} Your Title Here {% endblock %}
+
+{% block content %} 
+<div class="columns">
+    <div class="column">
+        <section class="section">
+            <div class="container has-text-centered">
+                <h2 class="title">Hello there!</h2>
+                <br />
+            </div>
+            <div class="box">
+                <form action="/add" method="POST">
+                    <div class="field">
+                        <p class="subtitle has-text-centered has-text-primary-dark">Add a Link</p>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-rounded" type="text" placeholder="Enter Display Name" autofocus="" name="display_name">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-rounded" type="url" placeholder="Enter Link" name="link">
+                        </div>
+                    </div>    
+                    <br />
+                    <button type="submit" class="button is-block is-danger is-fullwidth is-rounded">Submit</button>
+                    <br />
+                </form>
+            </div>
+
+            <div class="box">
+                <form action="/delete" method="POST">
+                    <div class="field">
+                        <p class="subtitle has-text-centered has-text-primary-dark">Delete a Link</p>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-rounded" type="text" placeholder="Enter Display Name to Delete" autofocus="" name="del_display_name">
+                        </div>
+                    </div>
+                    <br />
+                    <button type="submit" class="button is-block is-danger is-fullwidth is-rounded">Delete</button>
+                    <br />
+                </form>
+            </div>
+        </section>
+    </div>
+    <div class="column">
+        <section class="section">
+            <div class="container has-text-centered">
+                <h2 class="title">Your Page:</h2>
+                <br />
+                {% include "button_display.html" %}
+            </div>
+        </section>
+    </div>
+</div>
+
+{% endblock %} 
