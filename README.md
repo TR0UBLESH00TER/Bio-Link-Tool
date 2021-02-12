@@ -58,7 +58,7 @@ $ source virtual/Scripts/activate
 Command to setup developement mode
 ```console
 $ export FLASK_ENV=development
-$ export FLASK_APP=main.py
+$ export FLASK_APP=app.py
 ```
 
 Command to run/host
